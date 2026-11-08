@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="calculator">
+            <h2>Calculator</h2>
+            <input type="text" id="display">
+            <br><br>
+
+            <table>
+                <tr>
+                    <td><input type="button" value="C" onclick="clearDisplay()"></td>
+                    <td><input type="button" value="DEL" onclick="deleteLast()"></td>
+                    <td><input type="button" value="x" onclick="addValue('*')"></td>
+                    <td><input type="button" value="/" onclick="addValue('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="addValue('1')"></td>
+                    <td><input type="button" value="2" onclick="addValue('2')"></td>
+                    <td><input type="button" value="3" onclick="addValue('3')"></td>
+                    <td><input type="button" value="+" onclick="addValue('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="addValue('4')"></td>
+                    <td><input type="button" value="5" onclick="addValue('5')"></td>
+                    <td><input type="button" value="6" onclick="addValue('6')"></td>
+                    <td><input type="button" value="-" onclick="addValue('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="addValue('7')"></td>
+                    <td><input type="button" value="8" onclick="addValue('8')"></td>
+                    <td><input type="button" value="9" onclick="addValue('9')"></td>
+                    <td rowspan="2"><input type="button" id="equalBtn" value="=" onclick="calculate()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="0" onclick="addValue('0')"></td>
+                    <td><input type="button" value="." onclick="addValue('.')"></td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
