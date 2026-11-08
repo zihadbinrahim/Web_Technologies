@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Membership Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Library Membership Form</h1>
+        <form method="post" id="memberForm">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required>
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+            <br><br>
+            <label for="membership">Membership: </label>
+            <input type="radio" name="membership" value="Basic" checked> Basic
+            <input type="radio" name="membership" value="Silver"> Silver
+            <input type="radio" name="membership" value="Gold"> Gold
+            <br><br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </form>
+        <div id="output"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
