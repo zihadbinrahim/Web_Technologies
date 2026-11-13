@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>City Gym Membership</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>City Gym Membership</h1>
+        </header>
+
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Fee (Taka)</th>
+            </tr>
+            <tr>
+                <td>Monthly Plan</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>Quarterly Plan</td>
+                <td>4000</td>
+            </tr>
+            <tr>
+                <td>Yearly Plan</td>
+                <td>14000</td>
+            </tr>
+            <tr>
+                <td>Family Add-on (each)</td>
+                <td>500</td>
+            </tr>
+        </table>
+
+        <form id="memberForm">
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName">
+                </div><br>
+
+                <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age">
+                </div><br>
+
+                <div>
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile">
+                </div><br>
+
+                <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+                </div><br>
+
+                <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+                </div><br>
+
+                <div>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword">
+                </div><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Plan</legend>
+
+                <div>
+                <label for="plan">Plan:</label>
+                <select id="plan">
+                    <option value="">Select Plan</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Yearly">Yearly</option>
+                </select>
+                </div><br>
+
+                <div>
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate">
+                </div><br>
+
+                <div>
+                <label for="workoutTime">Workout Time:</label>
+                    <input type="radio" id="workoutTime" value="Morning">Morning</label>
+                    <input type="radio" id="workoutTime" value="Afternoon">Afternoon</label>
+                    <input type="radio" id="workoutTime" value="Evening">Evening</label>
+                </div><br>
+
+                <div id="trainers">
+                    <div>
+                        <label for="mainTrainer">Main Trainer:</label>
+                        <select id="mainTrainer">
+                            <option value="">Select Trainer</option>
+                            <option value="Rafi">Rafi</option>
+                            <option value="Mitu">Mitu</option>
+                            <option value="Sabbir">Sabbir</option>
+                            <option value="Joya">Joya</option>
+                        </select>
+                    </div><br>
+                    
+                    <div>
+                        <label for="backupTrainer">Backup Trainer:</label>
+                        <select id="backupTrainer">
+                            <option value="">Select Trainer</option>
+                            <option value="Rafi">Rafi</option>
+                            <option value="Mitu">Mitu</option>
+                            <option value="Sabbir">Sabbir</option>
+                            <option value="Joya">Joya</option>
+                        </select>
+                    </div> <br>
+                </div>
+
+                <label for="addons">Family Add-ons:</label>
+                <input type="number" id="addons">
+                <br><br>
+            </fieldset>
+
+            <input type="checkbox" id="fitCheck" onchange="toggleBtn()">
+            <label for="fitCheck">I am medically fit to exercise and I accept the gym rules.</label>
+            <br><br>
+
+            <button type="submit" id="joinBtn" disabled>Join Now</button>
+
+            <div id="output"></div>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
